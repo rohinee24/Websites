@@ -1,0 +1,312 @@
+.hero {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero .content h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (max-width: 991px) {
+    .hero .content h2 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  .hero .content .lead {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+  }
+  
+  .hero .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  @media (max-width: 576px) {
+    .hero .cta-buttons {
+      flex-direction: column;
+    }
+  }
+  
+  .hero .cta-buttons .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .hero .cta-buttons .btn.btn-primary {
+    background-color: #E87532;
+    border-color: #E87532;
+    color: var(--contrast-color);
+  }
+  
+  .hero .cta-buttons .btn.btn-primary:hover {
+    background-color: #EC8E57;
+    border-color: #EC8E57;
+    transform: translateY(-2px);
+  }
+  
+  .hero .cta-buttons .btn.btn-outline {
+    border: 2px solid #F8D5C1;
+    color: #E87558;
+    background: transparent;
+  }
+  
+  .hero .cta-buttons .btn.btn-outline:hover {
+    background-color: #E87532;
+    color: var(--contrast-color);
+    transform: translateY(-2px);
+  }
+  
+  .hero .hero-stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 576px) {
+    .hero .hero-stats {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+  
+  .hero .hero-stats .stat-item .stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    line-height: 1;
+  }
+  
+  .hero .hero-stats .stat-item .stat-label {
+    font-size: 0.9rem;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    margin-top: 0.5rem;
+    display: block;
+  }
+  
+  .hero .hero-image {
+    position: relative;
+    padding: 2rem;
+  }
+  
+  .hero .hero-image img {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero .hero-image .shape-1,
+  .hero .hero-image .shape-2 {
+    position: absolute;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    z-index: 1;
+  }
+  
+  .hero .hero-image .shape-1 {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 0, 0, 0.15);
+    top: -20px;
+    right: -20px;
+    animation: morphShape 15s linear infinite;
+  }
+  
+  .hero .hero-image .shape-2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 255, 0.10);
+    bottom: -20px;
+    left: -20px;
+    animation: morphShape 20s linear infinite reverse;
+  }
+  
+  @media (max-width: 991px) {
+    .hero {
+      text-align: center;
+      padding: 60px 0;
+    }
+  
+    .hero .cta-buttons {
+      justify-content: center;
+    }
+  
+    .hero .hero-stats {
+      justify-content: center;
+    }
+  
+    .hero .hero-image {
+      margin-top: 3rem;
+    }
+  }
+  
+  @keyframes morphShape {
+    0% {
+      border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    }
+  
+    25% {
+      border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+    }
+  
+    50% {
+      border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+    }
+  
+    75% {
+      border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+    }
+  
+    100% {
+      border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    }
+  }
+  .about .content .who-we-are {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+  }
+  
+  .about .content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    padding-bottom: 10px;
+  }
+  
+  .about .content ul i {
+    font-size: 1.25rem;
+    margin-right: 4px;
+    color: #e99978;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .about .content .read-more {
+    background:  #E87532;
+    color: white;
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about .content .read-more i {
+    font-size: 18px;
+    margin-left: 5px;
+    line-height: 0;
+    transition: 0.3s;
+  }
+  
+  .about .content .read-more:hover {
+    background: #eb7b3b;
+    padding-right: 19px;
+  }
+  
+  .about .content .read-more:hover i {
+    margin-left: 10px;
+  }
+  
+  .about .about-images img {
+    border-radius: 10px;
+  }
+  
+  .section-title h2{
+    color:#7C503D;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    padding: 19px;
+  }
+  .section-title p{
+    color:#7C503D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    /* padding: 19px; */
+  }
+
+  .call-to-action {
+    padding: 80px 0;
+    position: relative;
+    clip-path: inset(0);
+    margin-top: 16px;
+  }
+  
+  .call-to-action img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .call-to-action:before {
+    content: "";
+    background: color-mix(in srgb, var(--background-color), transparent 50%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
+  
+  .call-to-action .container {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .call-to-action h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .call-to-action p {
+    color: white;
+  }
+  
+  .call-to-action .cta-btn {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #F8D5C1;
+    color: var(--contrast-color);
+  }
+  
+  .call-to-action .cta-btn:hover {
+    background:  #E87532;
+    border: 2px solid  #E87532;
+  }
+ 

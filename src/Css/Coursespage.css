@@ -1,0 +1,69 @@
+/* CSS */
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .course-card {
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .course-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .course-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .course-description {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 5px;
+  }
+  
+  .course-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .course-price {
+    font-size: 16px;
+    font-weight: bold;
+    color:#686663;
+  }
+  
+  .course-rating {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .enroll-button {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #E87532;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .enroll-button:hover {
+    background-color: #eb7b3b;
+  }
+  
