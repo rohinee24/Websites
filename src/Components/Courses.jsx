@@ -48,7 +48,7 @@ const FeaturedServices = () => {
                   <i className={service.icon}></i>
                 </div>
                 <h4>
-                  <a href="#" className="stretched-link">
+                  <a  className="stretched-link">
                     {service.title}
                   </a>
                 </h4>

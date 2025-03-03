@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap Import
 import AOS from "aos";
 import "aos/dist/aos.css";
 import '../Css/Aboutus.css';
-import { Link } from "react-router-dom";
+
 const aboutImg = "/Homepage/Aboutsection/about-company-1.jpg"; // Adjust the path as per your project structure
 
 const About = () => {

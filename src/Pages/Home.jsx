@@ -151,7 +151,7 @@ Join thousands of learners and start your journey towards success today!
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-              <a className="cta-btn" href="#">Call To Action</a>
+              <a className="cta-btn" >Call To Action</a>
               
             </div>
           </div>
